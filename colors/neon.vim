@@ -10,7 +10,7 @@ set t_Co=256
 let g:colors_name = "neon"
 
 " Palette
-let s:bg = {'gui': '#1e1f25', 'cterm': 234}
+let s:bg = {'gui': '#22272e', 'cterm': 234}
 let s:fg = {'gui': '#a2a8ad', 'cterm': 247}
 let s:white = {'gui': '#D5D6D7', 'cterm': 15}
 let s:light_gray = {'gui': '#caccd7', 'cterm': 252}
@@ -61,8 +61,9 @@ exec "hi Label guifg=#7e8aa2 guibg=NONE gui=NONE ctermfg=103"
 exec "hi LineNr guifg=". s:fg.gui ." guibg=". s:gray_blue.gui ." gui=NONE ctermfg=". s:fg.cterm ." ctermbg=". s:gray_blue.cterm
 exec "hi Macro guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=". s:gray.cterm
 exec "hi MatchParen guifg=". s:bg.gui ." guibg=". s:dark_blue.gui ." gui=bold cterm=bold ctermfg=". s:bg.cterm ." ctermbg=". s:dark_blue.cterm
-exec "hi NonText guifg=#808080 guibg=#202020 gui=NONE ctermfg=8 ctermbg=234"
-exec "hi Normal guifg=". s:fg.gui ." guibg=". s:bg.gui ." gui=NONE ctermfg=". s:fg.cterm ." ctermbg=". s:bg.cterm
+" exec "hi NonText guifg=". s:orange.gui ."guibg=". s:bg.gui ."gui=NONE ctermfg=". s:orange.cterm ."ctermbg=". s:bg.cterm
+" exec "hi Normal guifg=". s:orange.gui ." guibg=". s:bg.gui ." gui=NONE ctermfg=". s:fg.cterm ." ctermbg=". s:bg.cterm
+exec "hi EndOfBuffer guifg=". s:bg.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:bg.cterm
 exec "hi Number guifg=". s:green.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:green.cterm
 exec "hi Operator guifg=". s:dark_blue.gui ." guibg=NONE gui=NONE ctermfg=". s:dark_blue.cterm
 exec "hi PMenu guifg=". s:white.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:white.cterm ." ctermbg=". s:dark_gray.cterm
@@ -114,3 +115,32 @@ exec "hi htmlArg guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.
 exec "hi DiffAdd guifg=NONE guibg=". s:green.gui ." ctermbg=". s:green.cterm
 exec "hi DiffChange guifg=NONE guibg=". s:blue.gui ." ctermbg=". s:blue.cterm
 exec "hi DiffDelete guifg=NONE guibg=". s:pink.gui ." ctermbg=". s:pink.cterm
+
+" Go
+exec "hi goBuiltins guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi goComment guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi goConst guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi goDecimalInt guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi goDeclaration guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi goField guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi goFormatSpecifier guifg=". s:pink.gui ." guibg=NONE gui=NONE ctermfg=" s:pink.cterm
+exec "hi goFunctionCall guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi goImport guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi goImportString guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi goPackage guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi goPackageComment guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi goPredefinedIdentifiers guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi goRawString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi goRepeat guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi goSignedInts guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi goStatement guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi goString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi goTodo guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=" s:orange.cterm
+exec "hi goType guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi goTypeDecl guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+
+exec "hi NERDTreeDir guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi NERDTreeClosable guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi NERDTreeOpenable guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+
+exec "hi vimString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
