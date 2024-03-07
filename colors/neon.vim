@@ -26,44 +26,36 @@ let s:pink = {'gui': '#ff5fff', 'cterm': 207}
 let s:orange = {'gui': '#ff5f00', 'cterm': 202}
 let s:light_orange = {'gui': '#f0c674', 'cterm': 168}
 
-"hi Directory 
 exec "hi Boolean guifg=". s:white.gui ." guibg=NONE gui=bold ctermfg=". s:white.cterm
 exec "hi Builtin guifg=". s:purple.gui ." guibg=NONE gui=bold ctermfg=". s:purple.cterm
 exec "hi Character guifg=#ff9800 guibg=NONE gui=NONE ctermfg=208"
+exec "hi ColorColumn guifg=NONE guibg=". s:gray_blue.gui ." gui=NONE ctermfg=NONE ctermbg=". s:gray_blue.cterm
 exec "hi Comment guifg=". s:gray.gui ." guibg=NONE gui=italic ctermfg=". s:gray.cterm
 exec "hi Conditional guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
-exec "hi ColorColumn guifg=NONE guibg=". s:gray_blue.gui ." gui=NONE ctermfg=NONE ctermbg=". s:gray_blue.cterm
 exec "hi Constant guifg=". s:cyan.gui ." guibg=NONE gui=NONE ctermfg=". s:cyan.cterm
-exec "hi cursorim guifg=#192224 guibg=#536991 gui=NONE ctermfg=235 ctermbg=60"
+exec "hi Cursor guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=241"
+exec "hi CursorColumn guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=". s:dark_gray.cterm
 exec "hi CursorLine guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=". s:dark_gray.cterm
 exec "hi CursorLineNr guifg=". s:cyan.gui ." guibg=". s:gray_blue.gui ." gui=NONE ctermfg=". s:cyan.cterm ." ctermbg=". s:gray_blue.cterm
-exec "hi CursorColumn guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=". s:dark_gray.cterm
-exec "hi Cursor guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=241"
 exec "hi Debug guifg=". s:light_orange.gui ." guibg=NONE gui=NONE ctermfg=". s:light_orange.cterm
 exec "hi Define guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
 exec "hi Delimiter guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=". s:gray.cterm
-"hi EnumerationName 
-"hi EnumerationValue 
+exec "hi EndOfBuffer guifg=". s:bg.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:bg.cterm
 exec "hi Error guifg=". s:bg.gui ." guibg=". s:pink.gui ." gui=NONE ctermfg=". s:bg.cterm ." ctermbg=". s:pink.cterm
 exec "hi ErrorMsg guifg=". s:pink.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:pink.cterm
 exec "hi Exception guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
 exec "hi Float guifg=". s:green.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:green.cterm
-"hi FoldColumn 
 exec "hi Folded guifg=#a0a8b0 guibg=#384048 gui=NONE ctermfg=103 ctermbg=238"
 exec "hi Function guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
 exec "hi Identifier guifg=". s:fg.gui ." guibg=NONE gui=NONE cterm=NONE ctermfg=". s:fg.cterm
-"hi Ignore 
 exec "hi Import guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
-exec "hi Include guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
 exec "hi IncSearch guifg=". s:cyan.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:cyan.cterm ." ctermbg=". s:dark_gray.cterm
+exec "hi Include guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
 exec "hi Keyword guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
 exec "hi Label guifg=#7e8aa2 guibg=NONE gui=NONE ctermfg=103"
 exec "hi LineNr guifg=". s:fg.gui ." guibg=". s:gray_blue.gui ." gui=NONE ctermfg=". s:fg.cterm ." ctermbg=". s:gray_blue.cterm
 exec "hi Macro guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=". s:gray.cterm
 exec "hi MatchParen guifg=". s:bg.gui ." guibg=". s:dark_blue.gui ." gui=bold cterm=bold ctermfg=". s:bg.cterm ." ctermbg=". s:dark_blue.cterm
-" exec "hi NonText guifg=". s:orange.gui ."guibg=". s:bg.gui ."gui=NONE ctermfg=". s:orange.cterm ."ctermbg=". s:bg.cterm
-" exec "hi Normal guifg=". s:orange.gui ." guibg=". s:bg.gui ." gui=NONE ctermfg=". s:fg.cterm ." ctermbg=". s:bg.cterm
-exec "hi EndOfBuffer guifg=". s:bg.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:bg.cterm
 exec "hi Number guifg=". s:green.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:green.cterm
 exec "hi Operator guifg=". s:dark_blue.gui ." guibg=NONE gui=NONE ctermfg=". s:dark_blue.cterm
 exec "hi PMenu guifg=". s:white.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:white.cterm ." ctermbg=". s:dark_gray.cterm
@@ -75,7 +67,6 @@ exec "hi PreProc guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.ct
 exec "hi Question guifg=". s:light_orange.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:light_orange.cterm
 exec "hi Repeat guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
 exec "hi Search guifg=". s:cyan.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:cyan.cterm ." ctermbg=". s:dark_gray.cterm
-"hi SignColumn 
 exec "hi Special guifg=". s:pink.gui ." guibg=NONE gui=NONE ctermfg=". s:pink.cterm
 exec "hi SpecialChar guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=208"
 exec "hi SpecialComment guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=208"
@@ -94,22 +85,9 @@ exec "hi Title guifg=". s:fg.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:
 exec "hi Todo guifg=#8f8f8f guibg=NONE gui=NONE ctermfg=245"
 exec "hi Type guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=". s:purple.cterm
 exec "hi Typedef guifg=". s:dark_blue.gui ." guibg=NONE gui=NONE ctermfg=103"
-"hi Underlined 
-"hi Union 
 exec "hi VertSplit guifg=NONE guibg=". s:gray_blue.gui ." gui=NONE ctermfg=238 ctermbg=". s:gray_blue.cterm
 exec "hi Visual guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=0 ctermbg=". s:dark_blue.cterm
-"hi WarningMsg 
-"hi WildMenu 
-" Python
-exec "hi pythonDecorator guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=". s:green.cterm
-exec "hi pythonDecoratorName guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=". s:green.cterm
-exec "hi pythonexception guifg=". s:dark_blue.gui ." guibg=NONE gui=NONE ctermfg=". s:dark_blue.cterm
-exec "hi pythonexclass guifg=". s:cyan.gui ." guibg=NONE gui=NONE ctermfg=". s:cyan.cterm
-
-" HTML
-exec "hi htmlTag guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=". s:gray.cterm
-exec "hi htmlTagName guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=". s:purple.cterm
-exec "hi htmlArg guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
+exec "hi cursorim guifg=#192224 guibg=#536991 gui=NONE ctermfg=235 ctermbg=60"
 
 " Diff
 exec "hi DiffAdd guifg=NONE guibg=". s:green.gui ." ctermbg=". s:green.cterm
@@ -134,24 +112,37 @@ exec "hi goRawString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cte
 exec "hi goRepeat guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi goSignedInts guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi goStatement guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
-exec "hi goString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi goString guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
 exec "hi goTodo guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=" s:orange.cterm
 exec "hi goType guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi goTypeDecl guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 
-exec "hi NERDTreeDir guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
-exec "hi NERDTreeClosable guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
-exec "hi NERDTreeOpenable guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
-
-exec "hi vimString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
-
+" HAML
 exec "hi hamlClass guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi hamlClassChar guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi hamlRuby guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi hamlRubyChar guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
 exec "hi hamlTag guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+
+" HTML
+exec "hi htmlArg guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
+exec "hi htmlTag guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=". s:gray.cterm
 exec "hi htmlTagName guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+
+" NERDTree
+exec "hi NERDTreeClosable guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi NERDTreeDir guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi NERDTreeOpenable guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+
+" Python
+exec "hi pythonDecorator guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=". s:green.cterm
+exec "hi pythonDecoratorName guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=". s:green.cterm
+exec "hi pythonexception guifg=". s:dark_blue.gui ." guibg=NONE gui=NONE ctermfg=". s:dark_blue.cterm
+exec "hi pythonexclass guifg=". s:cyan.gui ." guibg=NONE gui=NONE ctermfg=". s:cyan.cterm
+
+" Ruby
 exec "hi rubyArrayLiteral guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi rubyAssertion guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=" s:orange.cterm
 exec "hi rubyAttribute guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:blue.cterm
 exec "hi rubyBangPredicateMethod guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi rubyBlockParameterList guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
@@ -163,7 +154,7 @@ exec "hi rubyComment guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:gre
 exec "hi rubyConditionalExpression guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi rubyConstant guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi rubyConstant guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
-exec "hi rubyControl guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi rubyControl guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:blue.cterm
 exec "hi rubyCurlyBlock guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi rubyCurlyBlockDelimiter guifg=". s:light_orange.gui ." guibg=NONE gui=NONE ctermfg=" s:light_orange.cterm
 exec "hi rubyDefine guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
@@ -181,10 +172,15 @@ exec "hi rubyPseudoVariable guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=
 exec "hi rubyRegexpAnchor guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi rubyRegexpCharClass guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi rubyRegexpQuantifier guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
-exec "hi rubyString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi rubyString guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
 exec "hi rubyStringEscape guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi rubySymbol guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi rubySymbol guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi rubySymbolDelimiter guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi rubyTestAction guifg=". s:pink.gui ." guibg=NONE gui=NONE ctermfg=" s:pink.cterm
+exec "hi rubyTestMacro guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:blue.cterm
 exec "hi rubyTodo guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=" s:orange.cterm
 exec "hi rubyValidation guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:blue.cterm
+
+" VIM
+exec "hi vimString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
