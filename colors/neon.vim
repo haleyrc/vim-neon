@@ -184,3 +184,9 @@ exec "hi rubyValidation guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:b
 
 " VIM
 exec "hi vimString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+
+" YAML
+exec "hi yamlBlockMappingKey guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi yamlFlowString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi yamlFlowStringDelimiter guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi yamlKeyValueDelimiter guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
