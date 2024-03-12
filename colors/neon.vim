@@ -118,23 +118,31 @@ exec "hi goType guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.ct
 exec "hi goTypeDecl guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 
 "" TreeSitter
-exec "hi @keyword.function.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
-exec "hi @keyword.return.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
-exec "hi @keyword.import.go guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
-exec "hi @keyword.conditional.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
-exec "hi @function.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
-exec "hi @comment.go guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
-exec "hi @string.go guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi @boolean.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi @comment.documentation.go guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
-exec "hi @type.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
-exec "hi @type.builtin.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
-exec "hi @module.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
-exec "hi @variable.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
-exec "hi @variable.parameter.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
-exec "hi @function.method.call.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
-exec "hi @function.call.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
-exec "hi @function.builtin.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @comment.go guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
 exec "hi @constant.builtin.go guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi @function.builtin.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @function.call.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @function.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @function.method.call.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @keyword.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi @keyword.conditional.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi @keyword.function.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi @keyword.import.go guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi @keyword.repeat.go guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi @keyword.return.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi @module.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi @number.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi @operator.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi @property.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi @string.go guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi @type.builtin.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi @type.definition.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi @type.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi @variable.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi @variable.member.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi @variable.parameter.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 
 " HAML
 exec "hi hamlClass guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
