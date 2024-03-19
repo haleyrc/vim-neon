@@ -122,7 +122,7 @@ exec "hi @boolean.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cte
 exec "hi @comment.documentation.go guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
 exec "hi @comment.go guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
 exec "hi @constant.builtin.go guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
-exec "hi @function.builtin.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @function.builtin.go guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:blue.cterm
 exec "hi @function.call.go guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:blue.cterm
 exec "hi @function.go guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
 exec "hi @function.method.call.go guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:blue.cterm
