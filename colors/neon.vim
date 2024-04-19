@@ -143,6 +143,7 @@ exec "hi @type.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi @variable.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi @variable.member.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi @variable.parameter.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
+exec "hi @tag.xml guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
 
 " HAML
 exec "hi hamlClass guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
