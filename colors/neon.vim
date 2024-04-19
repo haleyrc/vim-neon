@@ -144,8 +144,8 @@ exec "hi @variable.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.ct
 exec "hi @variable.member.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi @variable.parameter.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi @tag.xml guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=" s:blue.cterm
-exec "hi @tag.attribute.xml guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
-exec "hi @tag.delimiter.xml guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @tag.attribute.xml guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi @tag.delimiter.xml guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
 exec "hi @number.xml guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
 exec "hi @string.xml guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
 exec "hi @string.special.xml guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
