@@ -144,6 +144,12 @@ exec "hi @variable.go guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.ct
 exec "hi @variable.member.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi @variable.parameter.go guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 exec "hi @tag.xml guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @tag.attribute.xml guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
+exec "hi @tag.delimiter.xml guifg=". s:purple.gui ." guibg=NONE gui=NONE ctermfg=" s:purple.cterm
+exec "hi @xml.number guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi @xml.string guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi @xml.string.special guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi @spell.xml guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 
 " HAML
 exec "hi hamlClass guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
