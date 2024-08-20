@@ -163,6 +163,17 @@ exec "hi htmlArg guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.
 exec "hi htmlTag guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=". s:gray.cterm
 exec "hi htmlTagName guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
 
+" Markdown
+exec "hi @markup.heading.1.markdown guifg=". s:purple.gui ." guibg=NONE gui=bold ctermfg=". s:purple.cterm
+exec "hi @markup.heading.2.markdown guifg=". s:purple.gui ." guibg=NONE gui=bold ctermfg=". s:purple.cterm
+exec "hi @markup.heading.3.markdown guifg=". s:purple.gui ." guibg=NONE gui=bold ctermfg=". s:purple.cterm
+exec "hi @markup.heading.4.markdown guifg=". s:purple.gui ." guibg=NONE gui=bold ctermfg=". s:purple.cterm
+exec "hi @markup.quote.markdown guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=". s:green.cterm
+exec "hi @markup.label.markdown guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
+exec "hi @markup.raw.block.markdown guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=". s:gray.cterm
+exec "hi @markup.heading.markdown guifg=". s:cyan.gui ." guibg=NONE gui=NONE ctermfg=". s:cyan.cterm
+exec "hi @punctuation.special.markdown guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=". s:orange.cterm
+
 " NERDTree
 exec "hi NERDTreeClosable guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
 exec "hi NERDTreeDir guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
@@ -224,3 +235,7 @@ exec "hi yamlBlockMappingKey guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg
 exec "hi yamlFlowString guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
 exec "hi yamlFlowStringDelimiter guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=" s:gray.cterm
 exec "hi yamlKeyValueDelimiter guifg=". s:fg.gui ." guibg=NONE gui=NONE ctermfg=" s:fg.cterm
+exec "hi @property.yaml guifg=". s:fg.gui ." guibg=NONE gui=bold ctermfg=". s:fg.cterm
+exec "hi @boolean.yaml guifg=". s:blue.gui ." guibg=NONE gui=bold ctermfg=". s:blue.cterm
+exec "hi @string.yaml guifg=". s:gray.gui ." guibg=NONE gui=bold ctermfg=". s:gray.cterm
+exec "hi @punctuation.delimiter.yaml guifg=". s:fg.gui ." guibg=NONE gui=bold ctermfg=". s:fg.cterm
