@@ -49,7 +49,7 @@ exec "hi Folded guifg=#a0a8b0 guibg=#384048 gui=NONE ctermfg=103 ctermbg=238"
 exec "hi Function guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
 exec "hi Identifier guifg=". s:fg.gui ." guibg=NONE gui=NONE cterm=NONE ctermfg=". s:fg.cterm
 exec "hi Import guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
-exec "hi IncSearch guifg=". s:cyan.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:cyan.cterm ." ctermbg=". s:dark_gray.cterm
+exec "hi IncSearch guifg=". s:orange.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:orange.cterm ." ctermbg=". s:dark_gray.cterm
 exec "hi Include guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
 exec "hi Keyword guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.cterm
 exec "hi Label guifg=#7e8aa2 guibg=NONE gui=NONE ctermfg=103"
@@ -66,7 +66,7 @@ exec "hi PreCondit guifg=". s:gray.gui ." guibg=NONE gui=NONE ctermfg=". s:gray.
 exec "hi PreProc guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
 exec "hi Question guifg=". s:light_orange.gui ." guibg=NONE gui=bold cterm=bold ctermfg=". s:light_orange.cterm
 exec "hi Repeat guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
-exec "hi Search guifg=". s:cyan.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:cyan.cterm ." ctermbg=". s:dark_gray.cterm
+exec "hi Search guifg=". s:orange.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:orange.cterm ." ctermbg=". s:dark_gray.cterm
 exec "hi Special guifg=". s:pink.gui ." guibg=NONE gui=NONE ctermfg=". s:pink.cterm
 exec "hi SpecialChar guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=208"
 exec "hi SpecialComment guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=208"
