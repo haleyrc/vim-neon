@@ -93,6 +93,8 @@ exec "hi cursorim guifg=#192224 guibg=#536991 gui=NONE ctermfg=235 ctermbg=60"
 exec "hi DiffAdd guifg=NONE guibg=". s:green.gui ." ctermbg=". s:green.cterm
 exec "hi DiffChange guifg=NONE guibg=". s:blue.gui ." ctermbg=". s:blue.cterm
 exec "hi DiffDelete guifg=NONE guibg=". s:pink.gui ." ctermbg=". s:pink.cterm
+exec "hi @diff.plus.diff guifg=". s:green.gui ." guibg=NONE gui=NONE ctermfg=" s:green.cterm
+exec "hi @diff.minus.diff guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=" s:orange.cterm
 
 " Go
 exec "hi goBuiltins guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=" s:white.cterm
